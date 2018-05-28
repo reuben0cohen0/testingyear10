@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="aa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSource</title>
+</head>
+<h1>CSS</h1>
+
+<body>
+    <pre> <code>
+    body {
+    background: #E76F51;
+    color: #F4B581;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.special{
+    background-color: #E76F51;
+    font-size: 130px;
+    font-family: cursive;
+}
+
+.nav ul{
+    list-style: none;
+    background-color: #264653;
+    text-align: center;
+    padding: 0;
+    margin: 0 4px;
+}
+
+.nav li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7 em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #ffff;
+    margin: 0 4px;
+    padding: 0 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #2A9D8F;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover{
+    background-color: #2A9D8F;
+}
+ul a {display:block;width:150px;}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #294B59;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-family: cursive
+    border: none;
+    cursor: crosshair;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2A9D8F;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #719E98;
+    min-width: 100px;
+    font-size: 30px;
+    font-family: cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.img-responsive2 {
+  position: relative;
+  height: 100%;
+}
+
+.nav a.active{
+    background-color: #fff;
+    color: #444;
+    cursor: default
+}
+
+hr {
+    background-color: black;
+    height: 4px;    
+}
+
+
+table {
+    border: 1px;
+    border color: black;
+}
+
+td h2{
+    
+    text-align: center;
+}
+
+@media screen and (min-width: 600px)
+{
+    .nav li {
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.6em
+    }
+}
+
+/* Option 1 - Display Inline */
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+/* unvisited link */
+.a:link {
+    color: red;
+    font-family: cursive
+}
+
+/* Options 2 - Float
+.nav li {
+float:left;
+}
+.nav ul {
+overflow: auto;
+width: 600px
+margin: 0 auto;
+}
+.nav {
+background color: #444;
+}
+*/
+
+/* Photogrid CSS Below */
+
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a four column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+*/
+</div>
+
+<h1>Navigation Bar</h1>
+
+ body class="news">
+header>
+    div class="nav">
+        ul>
+            div class="dropdown">
+  button onclick="myFunction()" class="dropbtn">Menu</button>
+  div id="myDropdown" class="dropdown-content">
+    a href="index.html">Home</a>
+    a href="aboutme.html">About Me</a>
+    a href="photography.html">Photography</a>
+    a href="technology.html">Technology</a>
+    a href="contact.html">Contact</a>
+  /div>
+/div>  
+            
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+     for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show'); 
+      }
+    }
+  }
+}  
+
+    </div>
+</code></pre>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+    <title>FIFA World Cup Quiz</title>
+    </head>
+
+<script>
+window.onload = function() {
+  check.onclick = result;
+}
+
+function result() {
+  var score = 0;
+  score += parseInt(getSelectedRadioValue("q1")) || 0;
+  score += parseInt(getSelectedRadioValue("q2")) || 0;
+    score += parseInt(getSelectedRadioValue("q3")) || 0;
+    score += parseInt(getSelectedRadioValue("q4")) || 0;
+    score += parseInt(getSelectedRadioValue("q5")) || 0;
+    score += parseInt(getSelectedRadioValue("q6")) || 0;
+    score += parseInt(getSelectedRadioValue("q7")) || 0;
+
+  alert("You scored: " + score + " out of 7!");
+}
+
+
+function getSelectedRadioValue(name) {
+  var radios = document.getElementsByName(name);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      return radios[i].value;
+    }
+  }
+}
+    </script> 
+
+     <br>
+    <body>
+
+<a href="quiz.html" style="float: left;margin-left: 100px; color: #F4B581; text-decoration: none"><h1>⬅Back⬅</h1></a>
+ <div class="style">     
+<h1>FIFA World Cup Quiz</h1>
+     </div> 
+<br>
+<br>
+<br>
+<br>
+<div class="answers">
+<h2>Question 1</h2>
+Who has won the most World Cup championships?<br><br>
+        <div class="answers">
+<label>
+    <input type="radio" value="0" name="q1"> a) Zinedine Zidane</label>
+  <br>
+<label>
+    <input type="radio" value="1" name="q1"> b) Pele</label>
+  <br>
+<label>
+    <input type="radio" value="0" name="q1"> c) Diego Maradona</label>
+  <br>
+        <input type="hidden" name="jq1" id="jq1" />
+<br>
+<br>
+<h2>Question 2</h2>
+Which country built their own hotel and training camp for the 2014 World Cup?<br><br>
+
+            <label>
+                <input type="radio" value="1" name="q2"> a) Germany </label>
+                <br>
+            <label>
+                <input type="radio" value="0" name="q2"> b) England </label>
+                <br>
+            <label>
+                <input type="radio" value="0" name="q2"> c) Iran </label>
+        <input type="hidden" name="jq2" id="jq2" />
+<br>
+<br>
+<h2>Question 3</h2>
+Which country made their World Cup debut in 2010?<br><br>
+
+            <label>
+                <input type="radio" value="0" name="q3"> a) New Zealand </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q3"> b) Egypt </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q3"> c) None </label>
+            <input type="hidden" name="jq3" id="jq3" />
+<br>
+<br>
+<h2>Question 4</h2>
+Brazil have now hosted the World Cup twice. How many other countries have hosted the World Cup twice?<br><br>
+            <label>
+                <input type="radio" value="0" name="q4"> a) 4 </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q4"> b) 5 </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q4"> c) 6 </label>
+            <input type="hidden" name="jq4" id="jq4" />
+<br>
+<br>
+<h2>Question 5</h2>
+Not including 2014, how many different countries have won a World Cup?<br><br>
+            <label>
+                <input type="radio" value="0" name="q5"> a) 6 </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q5"> b) 8 </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q5"> c) 10 </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q5"> d) 12 </label>
+            <input type="hidden" name="jq5" id="jq5" />
+<br>
+<br>
+<h2>Question 6</h2>
+How many countries have participated in every World Cup?<br><br>
+                <label>
+                    <input type="radio" value="0" name="q6"> a) 4 </label>
+            <br>
+                <label>
+                    <input type="radio" value="0" name="q6"> b) 3 </label>
+            <br>
+                <label>
+                    <input type="radio" value="0" name="q6"> c) 1 </label>
+            <input type="hidden" name="jq6" id="jq6" />
+<br>
+<br>
+<h2>Question 7</h2>
+Where will the 2018 World Cup take place?
+<br><br>
+    <label>
+        <input type="radio" value="0" name="q7">a) England </label>
+            <br>
+     <label>
+         <input type="radio" value="0" name="q7">b) Hungary </label>
+            <br>
+     <label>
+         <input type="radio" value="1" name="q7">c) Russia </label>
+            <br>
+     <label>
+         <input type="radio" value="0" name="q7">d) China </label>
+            <input type="hidden" name="jq7" id="jq7" />
+<br>
+<br>
+<br>
+<br>
+<input type="button" id="check" value="I'm done">
+    
+    <br>
+    <br>
+    </div>
+        </div>
+
+    </body>
+</html>

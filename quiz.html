@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    </head>
+
+<body class="news">
+<header>
+    <div class="nav">
+        <ul>
+            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="photography.html">Photography</a>
+    <a href="technology.html">Technology</a>
+    <a href="SmartphoneDebate.html">Smartphone Debate</a>
+    <a href="quiz.html">Quiz</a>  
+    <a href="contact.html">Contact</a>
+  </div>
+</div>  
+            
+    <script>/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  
+        window.onload = function() {
+  check.onclick = result;
+}
+
+function result() {
+  var score = 0;
+  score += parseInt(getSelectedRadioValue("q1")) || 0;
+  score += parseInt(getSelectedRadioValue("q2")) || 0;
+    score += parseInt(getSelectedRadioValue("q3")) || 0;
+    score += parseInt(getSelectedRadioValue("q4")) || 0;
+    score += parseInt(getSelectedRadioValue("q5")) || 0;
+    score += parseInt(getSelectedRadioValue("q6")) || 0;
+    score += parseInt(getSelectedRadioValue("q7")) || 0;
+
+  alert("You scored: " + score + " out of 7!");
+}
+
+
+function getSelectedRadioValue(name) {
+  var radios = document.getElementsByName(name);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      return radios[i].value;
+    }
+  }
+}
+    </script> 
+    </ul>
+    </div>    
+</header>
+     <br>
+    <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <a href="fifaquiz.html" style="float: left; margin-left: 100px;font-size: 50px;color: #F4B581; text-decoration: none; border-style: solid;">FIFA World Cup Quiz</a>
+
+        <a href="quiz.html" style="float: right; margin-right: 100px; font-size: 50px; color: #F4B581; text-decoration: none; border-style: solid;">General Knowledge Quiz</a>
+        
+    </body>
+</body>
+</html>

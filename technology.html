@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Technology</title>
+</head>
+
+
+
+<body class="news">
+    <header>
+        <div class="nav">
+            <ul>
+                <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="aboutme.html">About Me</a>
+                        <a href="photography.html">Photography</a>
+                        <a href="technology.html">Technology</a>
+                        <a href="SmartphoneDebate.html">Smartphone Debate</a>
+                        <a href="quiz.html">Quiz</a>  
+                        <a href="contact.html">Contact</a>
+  </div>
+</div>  
+            
+    <script>/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>    
+            </ul>
+        </div>
+    </header>
+    
+        
+            
+            <table>
+                
+                <td><h2>How to Resize an image in Pixlr</h2></td>
+                
+   <div class="image">
+    <td><img src="tinyimages/uploadtopixlr-min.PNG" alt="Upload-to-Pixlr" height="300" width="340">
+    <br>
+    <div>Clcik where you would like to source the image from to start</div></td></div>
+      <br>
+        
+        <div class="image">
+            <td><img src="tinyimages/imagebar-min.PNG" alt="Imagebar" height="300" width="470">     
+                <div>Click Image bar > Image Size</div></td></div>
+            <br>
+         
+         <div class="image">
+            <br>
+             <td><img src="tinyimages/size-min.PNG" alt="Select the Size" width="474" height="255">
+            <br>
+                 <div>Select the size, which will be from 4000x3000 (original) to 533x400 (new)</div></td></div>
+            <br>
+                <td> <img src="tinyimages/MWY2.JPG" width="553" alt="Resized Img"></td>
+                
+                
+                
+                
+                
+                
+         
+        <tr>      
+      <div class="image">
+    <div><th><h2>How to Change an image filetype in Pixlr</h2></th></div>
+          <th> <img src="tinyimages/uploadtopixlr-min.PNG" alt="Upload-to-Pixlr" height="300" width="340">
+            <br><br>
+            <div>Clcik where you would like to source the image from to start</div></th>
+        
+        <div class="image">
+            <br>
+            <th><img src="tinyimages/resize-min.PNG" alt="Resize Loc" height="260" width="350">
+             <br>
+                <div>Click File --> Save....</div></th></div>
+            
+     <div class="image"></div>
+            <br>
+            <th><img src="tinyimages/save-min.PNG" alt="Save Img" height="300" width="400">
+            <br>
+                <div>You will then get the 'Save' window</div></th>
+            
+        <div class="image"></div>
+            <br>
+<th><img src="tinyimages/filetype-min.PNG" alt="Filetype">
+    <div>You can then select the output File Type</div></th>
+        
+                        </div>
+                    </tr>
+                </table>
+            
+</body>
+
+</html>

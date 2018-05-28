@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+    <title>General Knowledge Quiz</title>
+    </head>
+
+<script> 
+window.onload = function() {
+  check.onclick = result;
+}
+
+function result() {
+  var score = 0;
+  score += parseInt(getSelectedRadioValue("q1")) || 0;
+  score += parseInt(getSelectedRadioValue("q2")) || 0;
+    score += parseInt(getSelectedRadioValue("q3")) || 0;
+    score += parseInt(getSelectedRadioValue("q4")) || 0;
+    score += parseInt(getSelectedRadioValue("q5")) || 0;
+    score += parseInt(getSelectedRadioValue("q6")) || 0;
+    score += parseInt(getSelectedRadioValue("q7")) || 0;
+
+  alert("You scored: " + score + " out of 7!");
+}
+
+
+function getSelectedRadioValue(name) {
+  var radios = document.getElementsByName(name);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      return radios[i].value;
+    }
+  }
+}
+    </script> 
+     <br>
+    <body>
+        <a href="quiz.html" style="float: left;margin-left: 100px; color: #F4B581; text-decoration: none"><h1>⬅Back⬅</h1></a>
+ <div class="style">     
+<h1>General Knowledge Quiz</h1>
+     </div> 
+<br>
+<br>
+<br>
+<br>
+<div class="answers">
+<h2>Question 1</h2>
+What country has a maple leaf on its flag?<br><br>
+        <div class="answers">
+<label>
+    <input type="radio" value="0" name="q1"> a) Belize</label>
+  <br>
+<label>
+    <input type="radio" value="0" name="q1"> b) Lebanaon</label>
+  <br>
+<label>
+    <input type="radio" value="1" name="q1"> c) Canada</label>
+  <br>
+        <input type="hidden" name="jq1" id="jq1" />
+<br>
+<br>
+<h2>Question 2</h2>
+What Chemical Element is diamond made from?<br><br>
+
+            <label>
+                <input type="radio" value="0" name="q2"> a) Quartz </label>
+                <br>
+            <label>
+                <input type="radio" value="1" name="q2"> b) Carbon </label>
+                <br>
+            <label>
+                <input type="radio" value="0" name="q2"> c) Lithium </label>
+        <input type="hidden" name="jq2" id="jq2" />
+<br>
+<br>
+<h2>Question 3</h2>
+In what country were the 2014 Winter Olympics held in the town of Sochi?<br><br>
+
+            <label>
+                <input type="radio" value="0" name="q3"> a) Romania </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q3"> b) Ukraine </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q3"> c) Russia </label>
+            <input type="hidden" name="jq3" id="jq3" />
+<br>
+<br>
+<h2>Question 4</h2>
+Where would you find the Sea of Tranquility?<br><br>
+            <label>
+                <input type="radio" value="0" name="q4"> a) China </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q4"> b) Moon </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q4"> c) Cuba </label>
+            <input type="hidden" name="jq4" id="jq4" />
+<br>
+<br>
+<h2>Question 5</h2>
+Name the director of the Lord of the Rings trilogy<br><br>
+            <label>
+                <input type="radio" value="0" name="q5"> a) Leonardio Di Caprio </label>
+            <br>
+            <label>
+                <input type="radio" value="1" name="q5"> b) Peter Jackson </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q5"> c) Steven Spielberg </label>
+            <br>
+            <label>
+                <input type="radio" value="0" name="q5"> d) George Lucas </label>
+            <input type="hidden" name="jq5" id="jq5" />
+<br>
+<br>
+<h2>Question 6</h2>
+Which Chess piece can only move diagonally?<br><br>
+                <label>
+                    <input type="radio" value="0" name="q6"> a) King </label>
+            <br>
+                <label>
+                    <input type="radio" value="1" name="q6"> b) Bishop </label>
+            <br>
+                <label>
+                    <input type="radio" value="0" name="q6"> c) Rook </label>
+            <input type="hidden" name="jq6" id="jq6" />
+<br>
+<br>
+<h2>Question 7</h2>
+In "Thunderbirds", what was Lady Penelope's chauffeur called?
+<br><br>
+    <label>
+        <input type="radio" value="0" name="q7">a) Peter </label>
+            <br>
+     <label>
+         <input type="radio" value="1" name="q7">b) Parker </label>
+            <br>
+     <label>
+         <input type="radio" value="0" name="q7">c) Pablo </label>
+            <br>
+     <label>
+         <input type="radio" value="0" name="q7">d) Pascal </label>
+            <input type="hidden" name="jq7" id="jq7" />
+<br>
+<br>
+<br>
+<br>
+<input type="button" id="check" value="I'm done">
+    
+    <br>
+    <br>
+    </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" href="style.css">
+    <title>Photography</title>
+</head>
+    
+
+    
+<body class="news">
+<header>
+    <div class="nav">
+        <ul>
+            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+                       <a href="index.html">Home</a>
+                        <a href="aboutme.html">About Me</a>
+                        <a href="photography.html">Photography</a>
+                        <a href="technology.html">Technology</a>
+                        <a href="SmartphoneDebate.html">Smartphone Debate</a>
+                        <a href="quiz.html">Quiz</a>  
+                        <a href="contact.html">Contact</a>
+  </div>
+</div> 
+            
+    <script>/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>    
+        </ul>
+    </div>    
+</header> <center><br><br><br>
+    <br> <h3> <strong> I enjoy taking photos and using my camera to take some amazing shots. I have uploaded some below which show Exposure techniques, Lighting and Close Up techniques</strong>  </h3>
+    <br>
+    <br>
+    <img src="tinyimages/MWY2.JPG" alt="MWY" width="396" height="272">
+    <img src="tinyimages/Har3.JPG" alt="Plane" width="396" height="272">
+    <img src="tinyimages/MWY1.JPG" alt="MWY 2" width="396" height="272">
+    <img src="tinyimages/YS2.JPG" alt="Plane 2" width="396" height="272">
+    </center>
+</body>
+</html>
