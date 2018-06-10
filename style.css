@@ -48,7 +48,7 @@ body {
 
 .fader {
    background-color: #264653;
-    font-size: 130px;
+    font-size: 100px;
     font-family: cursive; 
 }
 
@@ -149,7 +149,8 @@ hr {
 }
 
 .answers {
-    font-size: 15px
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
 
@@ -168,6 +169,13 @@ td h2{
         
 }
 
+.smdb {
+     line-height: 1.0;
+}
+
+.imt {
+    font-size: 1.2em
+}
 
 @media screen and (min-width: 600px)
 {
