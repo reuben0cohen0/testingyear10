@@ -13,7 +13,7 @@ body {
 }
 
 .news {
-    font-family: monospace;
+    font-family: 'ABeeZee';font-size: 22px;
     background-color: #264653;
     -webkit-animation: ripple 0.3s linear;
     animation: ripple 0.3s linear;
@@ -29,11 +29,13 @@ body {
 .p {
     float: left;
     margin-left: 100px;
+    font-size: 13px;
 }
 
 .c {
     float: right;
     margin-right: 150px;
+    font-size: 13px;
 }
 
 .calink { 
@@ -171,6 +173,7 @@ td h2{
 
 .smdb {
      line-height: 1.0;
+    font-size: 13px;
 }
 
 .imt {
